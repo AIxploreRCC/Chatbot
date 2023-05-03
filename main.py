@@ -37,3 +37,10 @@ def select_bot():
 
 if __name__ == "__main__":
     select_bot()
+    
+st.title("Ask Zino_GPT")
+query = st.text_input("What would you like to ask?", "")
+
+if st.button("Submit"):
+    response = index.query(query)
+    st.write(response)
