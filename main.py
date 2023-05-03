@@ -1,6 +1,7 @@
 import os
 import importlib
-
+import openai
+import streamlit as st
 
 # Store API key in environment variable
 openai.api_key = st.secrets["OPENAI_API_KEY"]
