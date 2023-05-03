@@ -40,8 +40,8 @@ if __name__ == "__main__":
     select_bot()
     
 st.title("Ask Zino_GPT")
-query = st.text_input("What would you like to ask?", "")
+main = st.text_input("What would you like to ask?", "")
 
 if st.button("Submit"):
-    response = index.query(query)
+    response = main.query(main)
     st.write(response)
